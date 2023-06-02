@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/GP3dyzw/IMG-6199.jpg">
+    <title>Frontend-кейс</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <!-- Шапка -->
+            <div class="logo">
+                <span>Frontend</span>
+                <span>Кейс</span>
+            </div>
+
+            <!-- Меню сайта -->
+            <nav class="nav">
+                <ul>
+                    <li>Главная</li>
+                    <li>Каталог работ</li>
+                    <li>Услуги</li>
+                    <li>Галерея</li>
+                    <li>Отзывы</li>
+                    <li>Контакты</li>
+                </ul>
+            </nav>
+
+            <!-- Иконка бургерменю -->
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+    </div>
+    <footer style="text-align: center; padding: 10px 0;">
+        Подключайся к нам в телеграмм <a target="_blank" href="https://t.me/frontend_case">@frontend_case</a>.
+        Помощь новичкам!
+        Будем развиваться во фронтенд разработке вместе :)
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+</body>
+</html>
