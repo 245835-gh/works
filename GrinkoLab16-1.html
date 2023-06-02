@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Лабораторна робота 16-1</title>
+  <style>
+    .img {
+      width: 200px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <img class="img" src="Car.jpg" onclick="showImageSrc(this)">
+  <img class="img" src="Plane.jpg" onclick="showImageSrc(this)">
+  <img class="img" src="Train.jpg" onclick="showImageSrc(this)">
+
+  <script>
+    function showImageSrc(element) {
+      var img_point = element.getAttribute("src");
+      alert("Атрибут src: " + img_point);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Квадрат числа при натисканні на параграф</title>
+  <style>
+    p {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <p>2</p>
+  <p>5</p>
+  <p>8</p>
+
+  <script>
+    var paragraphs = document.querySelectorAll("p");
+
+    function handleParagraphClick(event) {
+      var paragraph = event.target;
+      var number = parseInt(paragraph.innerText);
+      var square = number * number;
+      paragraph.innerText = square;
+    }
+
+    for (var i = 0; i < paragraphs.length; i++) {
+      paragraphs[i].addEventListener("click", handleParagraphClick);
+    }
+  </script>
+</body>
+</html>

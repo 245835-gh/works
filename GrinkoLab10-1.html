@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>float</title>
+	<style>
+		.content1{
+		width:100%;
+		display:box;
+		}
+		.contetn2{
+			display: block;
+			width:100%;
+		}
+		@media (min-width:576px;){
+		.content2{
+		display:box;
+		}
+		}
+		@media (max-width:576;){
+		.box2{
+		width:100%;
+		height:120px;
+		}
+		.box3{
+		width:100%;
+		height:120px;
+		}
+		}
+		@media(min-width:768px;){
+		.content1{
+		display:box;
+		}
+		}
+		@media(max-height:768px;){
+		.box4{
+		width:100%;
+		height:120px;
+		}
+		.box5{
+		width:100%;
+		height:120px;
+		}
+		}
+		@media(min-width:992px;){
+		.wrapper{
+		display:box;
+		}
+		}
+		@media(max-width:992px;){
+		.box6{
+		width:100%;
+		height:330px;
+		}
+		}
+		.border_box{
+		border:1px solid white;
+		}
+		.box1 {
+			background-color:DodgerBlue;
+			float: left;
+			padding: 60px;
+			width: 77.4%;
+		}
+		.box2 {
+			background-color:Gray;
+			float: right;
+			padding: 20px;
+			padding-bottom:28%;
+			width: 9%;
+		}
+		.box3 {
+			background-color:Turquoise;
+			float: left;
+			padding: 44px;
+			width: 24.5%;
+		}
+		.box4 {
+			background-color:red;
+			float: left;
+			padding: 44px;
+			width: 24.5%;
+		}
+		.box5 {
+			background-color:Gold;
+			float: right;
+			padding: 20px;
+			padding-bottom:18.2%;
+			width: 20.2%;
+		}
+		.box6 {
+			background-color:ForestGreen;
+			float: left;
+			padding: 77px;
+			width: 50.9%;
+		}
+		.box7 {
+			background-color:OrangeRed;
+			float: left;
+			padding: 52px;
+			width: 91.5%;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="wrapper">	
+	<div class="box1 border_box"></div>
+	<div class="box2 border_box"></div>
+	<div class="content1">
+	<div class="box3 border_box"></div>
+	<div class="box4 border_box"></div>
+	</div>
+	<div class="box5 border_box"></div>
+	<div class="content2">
+	<div class="box6 border_box"></div>
+	</div>
+	</div>
+	<div class="box7 border_box"></div>
+</body>
+</html>

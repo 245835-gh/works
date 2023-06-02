@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Чергування фонового кольору</title>
+  <style>
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <script>
+    var divs = document.querySelectorAll("div");
+    var currentColor = "red";
+
+    function handleDivClick(event) {
+      var div = event.target;
+
+      if (currentColor === "red") {
+        div.classList.remove("green");
+        div.classList.add("red");
+        currentColor = "green";
+      } else {
+        div.classList.remove("red");
+        div.classList.add("green");
+        currentColor = "red";
+      }
+    }
+
+    function toggleColor() {
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].addEventListener("click", handleDivClick);
+      }
+    }
+
+    toggleColor();
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!Doctype html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script>
+function guessNumberGame() {
+  var playAgain = true;
+  
+  while (playAgain) {
+    var targetNumber = generateRandomNumber(0, 100);
+    var attempts = 0;
+    var guessed = false;
+  
+    while (!guessed) {
+      var userGuess = prompt("Вгадайте число від 0 до 100:");
+      attempts++;
+  
+      if (userGuess === null) {
+        break;
+      }
+  
+      userGuess = parseInt(userGuess);
+  
+      if (isNaN(userGuess)) {
+        alert("Введено некоректне значення. Будь ласка, спробуйте ще раз.");
+        continue;
+      }
+  
+      if (userGuess === targetNumber) {
+        guessed = true;
+        alert("Ви вгадали число!");
+      } else {
+        var temperature = getTemperature(userGuess, targetNumber);
+        alert("Ви не вгадали число. " + temperature);
+      }
+    }
+  
+    if (userGuess === null) {
+      break;
+    }
+  
+    alert("За " + attempts + " спроб ви вгадали число " + targetNumber + ".");
+  
+    playAgain = confirm("Спробувати ще раз?");
+  }
+}
+
+function generateRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getTemperature(guess, target) {
+  var difference = Math.abs(guess - target);
+  
+  if (difference >= 50) {
+    return "Дуже холодно";
+  } else if (difference >= 30) {
+    return "Холодно";
+  } else if (difference >= 10) {
+    return "Тепло";
+  } else {
+    return "Дуже гаряче";
+  }
+}
+
+guessNumberGame();
+
+</script>
+</body>
+</html>

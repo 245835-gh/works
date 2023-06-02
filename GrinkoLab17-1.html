@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script>
+function getCurrentTime() {
+  var date = new Date();
+
+  var hours = addLeadingZero(date.getHours());
+  var minutes = addLeadingZero(date.getMinutes());
+  var seconds = addLeadingZero(date.getSeconds());
+
+  var day = getDayName(date.getDay());
+  var month = getMonthName(date.getMonth());
+  var dayOfMonth = date.getDate();
+  var year = date.getFullYear();
+
+  var formattedTime = hours + ":" + minutes + ":" + seconds;
+  var formattedDate = day + ", " + dayOfMonth + " " + month + " " + year + " року";
+
+  console.log(formattedTime + ", " + formattedDate);
+}
+
+function addLeadingZero(number) {
+  return number < 10 ? "0" + number : number;
+}
+
+function getDayName(dayIndex) {
+  var days = ["неділя", "понеділок", "вівторок", "середа", "четвер", "п'ятниця", "субота"];
+  return days[dayIndex];
+}
+
+function getMonthName(monthIndex) {
+  var months = [
+    "січня", "лютого", "березня", "квітня", "травня", "червня",
+    "липня", "серпня", "вересня", "жовтня", "листопада", "грудня"
+  ];
+  return months[monthIndex];
+}
+
+getCurrentTime();
+</script>
+</body>
+</html>

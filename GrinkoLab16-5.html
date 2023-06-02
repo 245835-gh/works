@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Виведення значення input</title>
+</head>
+<body>
+  <input type="text" id="input1">
+  <input type="text" id="input2">
+  <input type="text" id="input3">
+  <p id="demo"></p>
+
+  <script>
+    var input1 = document.getElementById("input1");
+    var input2 = document.getElementById("input2");
+    var input3 = document.getElementById("input3");
+    var demo = document.getElementById("demo");
+
+    input1.addEventListener("blur", handleInputBlur);
+    input2.addEventListener("blur", handleInputBlur);
+    input3.addEventListener("blur", handleInputBlur);
+
+    function handleInputBlur(event) {
+      var input = event.target;
+      demo.innerText += input.value + ", ";
+      input.value = ""; // Закоментуйте цей рядок, якщо хочете зберегти значення в полі введення
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Виведення значення input через alert</title>
+</head>
+<body>
+  <input type="text" id="input1">
+  <input type="text" id="input2">
+  <input type="text" id="input3">
+
+  <script>
+    var inputs = document.querySelectorAll("input");
+    var isFirstClick = true;
+
+    function handleInputClick(event) {
+      if (isFirstClick) {
+        var input = event.target;
+        var value = input.value;
+        alert(value);
+        isFirstClick = false;
+      }
+    }
+
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].addEventListener("click", handleInputClick);
+    }
+  </script>
+</body>
+</html>

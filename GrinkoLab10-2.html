@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox</title>
+	<style>
+		* {
+			margin:0;
+		}
+		@media (min-width:576px;){
+			.content2-2{
+				display: flex;
+		}
+	}
+	@media (max-width:576px){
+		.box2{
+			width: 100%;
+			height: 120px;
+		}
+		.box3{
+			width:100%;
+			height:120px;
+		}
+	}
+	@media (min-width:768px;){
+.content2{
+	display:flex;
+}
+	}
+	@media (max-width:768px;){
+		.box5{
+			height:232px;
+			width:100%;
+		}
+
+	}
+	@media (max-width:992px;){
+		.box6{
+			height:352px;
+			width:100%;
+		}
+	}
+	@media (min-width:992px;){
+		.wrapper{
+			display:flex;
+		}
+	}
+	@media (min-width: 1200px) {
+
+}
+		.border-box{
+			border: 1px solid white;
+		}
+			.content1{
+				display: block;
+width:100%;
+			}
+			.content2{
+				display: flex;
+			}
+			.content2-1{
+display: block;
+width: 100%;
+			}
+			.content2-2{
+display: flex;
+			}
+		.wrapper {
+			display: flex;
+		}
+		
+		.box1 {
+			background-color: #4462e4;
+			width:100%;
+height:120px;
+		}
+		.box2 {
+			background-color: rgb(41, 196, 235);
+height:120px;
+width: 50%;
+		}
+		.box3 {
+			background-color: rgb(247, 89, 89);
+height: 120px;
+width: 50%;
+}
+			
+		.box4{
+			background-color: rgb(24, 141, 8);
+			width:100%;
+			height:112px;
+			
+		}
+		.box5 {
+			background-color: rgb(240, 134, 13);
+			height: 232px;
+			width:70%;
+			
+		}
+		.box6 {
+			background-color: rgb(83, 83, 83);
+			width:8%;
+height:352px;
+			
+		}
+		.box7 {
+			background-color: rgb(202, 94, 0);
+			width:100%;
+			height:70px;
+			
+		}
+		
+	</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="content1">
+				<div class="box1 border-box"></div>
+<div class="content2">
+	<div class="content2-1">
+		<div class="content2-2">
+				<div class="box2 border-box"></div>
+				<div class="box3 border-box"></div>
+			</div>
+				<div class="box4 border-box"></div>
+			</div>
+				<div class="box5 border-box"></div>
+			</div>
+</div>
+				<div class="box6 border-box"></div>	
+			</div>	
+			<div class="box7 border-box"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!Dcotype html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script>
+let i = parseInt(prompt("Введіть число від 1 до 7:"));
+
+let day;
+
+switch (i) {
+  case 1:
+    day = "Неділя";
+    break;
+  case 2:
+    day = "Понеділок";
+    break;
+  case 3:
+    day = "Вівторок";
+    break;
+  case 4:
+    day = "Середа";
+    break;
+  case 5:
+    day = "Четвер";
+    break;
+  case 6:
+    day = "П'ятниця";
+    break;
+  case 7:
+    day = "Субота";
+    break;
+  default:
+    day = "Некоректне число";
+}
+
+document.write("День неділі: " + day);
+
+</script>
+</body>
+</html>

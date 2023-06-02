@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+<head>
+</head>
+<body>
+<script>
+var i=0;
+while (i <=100){
+  if(isPrime(i)){
+    console.log(i);
+  }
+  i++;
+}
+function isPrime(p){
+  if (p <2){
+    return false;
+  }
+
+for (var i=2; i<=Math.sqrt(p); i++){
+if(p %i===0){
+  return false;
+}
+}
+return true;
+}
+</script>
+</body>
+</html>
