@@ -1,0 +1,155 @@
+*{
+	margin:0px;
+}
+.site_header{
+	background-color:#002561;
+	width:100%;
+	height:70px;
+}
+
+.logo{
+	width:160px;
+	height:35px;
+	
+}
+.site-header-logo{
+	padding:17px;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.linebox{
+    background-color:#002561;
+    width:100%;
+    height:40px;
+    display:flex;
+    border-top: 1px solid white;
+}
+.post{
+    display:flex;
+    width:100%;
+    height:40px;
+    align-content:center;
+}
+.post-sit{
+ width:120px;
+ text-align: center;
+ color:white;
+ font-size: 16px;
+    line-height: 28pt;
+	cursor:;
+}
+.slideshow-container{
+	max-width:1000px;
+	position:relative;
+	margin:auto;
+}
+.prev,.next{
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	width:auto;
+	margin-top:-22px;
+	padding:16px;
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+	transition:0.6s ease;
+	border-radius:0 3px 3px 0;
+}
+.next{
+	right:0;
+	border-radius:3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+	background-color:rgba(0,0,0,0,8);
+}
+.dot{
+	cursor:pointer;
+	height:13px;
+	width:13px;
+	margin:0 2px;
+	background-color:#bbb;
+	border-radius:50%;
+	display:inline-block;
+	transition:background-color 0.6s ease;
+}
+.active, dot:hover{
+	background-color:#717171;
+}
+.fade{
+	-webkit-animation-name:fade;
+	-webkit-animation-duration:1.5s;
+	animation-name:fade;
+	animation-duration:1.5s;
+}
+@-webkit-keyframes fade{
+	from{opacity: 4}
+	to{opacity: 1}
+}
+@keyframes fade{
+	
+	from{opacity: 4}
+	to{opacity: 1}
+}
+.text-news{
+	color:#002561;
+	font-size: 15px;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+}
+.imgnews{
+	width:60%;
+}
+.store-new{
+	display:flex;
+	flex-direction:column;
+	margin: 7px;
+	align-items:center;
+}
+.foter{
+	background-color:#002561;
+	width:100%;
+	height:70px;
+}
+.corps{
+	font-size:10px;
+	color:white;
+	text-align:center;
+	line-height: 100px;
+}
+.un-con{
+	display:flex;
+	flex-direction:column;
+}
+.h-text{
+	color:#002561;
+	font-size: 30px;
+}
+.text{
+	margin:17px;
+}
+.news-image{
+	width: 15%;
+    height: 200px;
+}
+.cont-new{
+	display:flex;
+	background-color:#d2d2d2;
+	margin: 9px
+}
+.news-h{
+	color:#002561;
+	font-size:14px;
+	font-weight:bold;
+}
+.news-text{
+	color:black;
+	font-size:14px;
+}
+.cont-new2{
+	display:flex;
+	flex-direction:column;
+	
+}
