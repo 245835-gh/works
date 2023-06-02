@@ -1,0 +1,90 @@
+.container{
+    display: flex;
+}
+.box1{
+display:flex;
+    background-color: rgb(46, 150, 219);
+    height:80px;
+    width:100%;
+}  
+.clamet1{
+  font-weight:bold;
+  font-family:Arial;
+font-size:15pt;
+
+line-height:60px;
+margin:0px;
+}
+.clamet2{
+color:white;
+font-weight:bold;
+  font-family:Arial;
+font-size:9pt;
+text-indent:7%;
+margin:0px;
+}
+.box1-2{
+display:flex;
+text-indent:2%;
+flex-direction:column;
+width:25%;
+}
+.box1-3{
+	display:flex;
+  justify-content: flex-end;
+width:70%;
+}
+.bn{
+margin:0px;
+font-weight:bold;
+line-height:80px;
+font-size:13pt;
+}
+.text-git{
+	display:flex;
+}
+.box2{
+	display:flex;
+    background-color: #1B1B1B;
+    height:60px;
+    width:100%;
+	align-items: flex-end;
+    justify-content: center;
+}  
+*{
+	margin:0px;
+}
+.container3{
+	
+display:flex;
+    height: 100px;
+    width: 100%;
+    align-items: flex-end;
+}
+.autor{
+	color:white;
+	font-size:12px;
+}
+.fon1{
+	font-size:16px;
+	font-weight:bold;
+	color:red;
+}
+.red-line{
+height:3px;
+width:100%;
+background-color:red;
+}
+.extremi{
+	color:grey;
+	font-size:10px;
+}
+.bk{
+	font-weight:bold;
+	font-size:10px;
+}
+.text-ident{
+	display:flex;
+	margin:8px;
+	flex-direction:column;
+}
